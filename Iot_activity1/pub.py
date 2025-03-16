@@ -26,6 +26,7 @@ port = 1883  # Broker port
 curr=location_generator()
 
 client = mqttClient.Client(mqttClient.CallbackAPIVersion.VERSION1, client_name)  # create new instance
+#client = mqttClient.Client(client_name)  #run the above one first if you face issues run this one
 
 
 client.on_connect = on_connect  # attach function to callback
