@@ -31,6 +31,7 @@ password = "hivemq"  # Connection password
 
 
 client = mqttClient.Client(mqttClient.CallbackAPIVersion.VERSION1, client_name)  # create new instance
+#client = mqttClient.Client(client_name)  #run above one first if you face issues run this one
 
 client.on_connect = on_connect  # attach function to callback
 client.on_message = on_message  # attach function to callback
